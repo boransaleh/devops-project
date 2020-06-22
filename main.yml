@@ -1,0 +1,9 @@
+---
+- hosts: localhost
+  connection: local
+  roles:
+    - init-cluster
+    
+- hosts: gcp_root
+  roles:
+    - install-gcloud
